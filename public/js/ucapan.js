@@ -75,13 +75,13 @@ const storeUcapan = async (nama, ucapan, kehadiran) => {
     });
     if (kehadiran == 1) {
       Swal.fire({
-        imageUrl: './images/happy.png',
+        imageUrl: "./images/happy.png",
         title: "Terima kasih ucapannya!",
         text: "Kami tunggu kehadiranmu ya " + nama,
       });
     } else {
       Swal.fire({
-        imageUrl: './images/sad.png',
+        imageUrl: "./images/sad.png",
         title: "Terima kasih ucapannya!",
         text: `Yahhh kamu ga hadir ya ${nama}... kami doakan kamu berubah pikiran untuk hadir yah.... hehe`,
       });
@@ -118,7 +118,7 @@ $("#form_ucapan").submit(function (e) {
   e.preventDefault();
   const nama = $("[name='form_ucapan_nama']").val();
   const ucapan = $("[name='form_ucapan_ucapan']").val();
-  const kehadiran = $("[name='form_ucapan_kehadiran']").val();
+  const kehadiran = parseInt($("[name='form_ucapan_kehadiran']").val());
   console.log(nama, ucapan, kehadiran);
 
   if (nama === "" || ucapan.length < 1 || kehadiran === "") {
@@ -126,6 +126,14 @@ $("#form_ucapan").submit(function (e) {
       icon: "error",
       title: "Duhh...",
       text: "Semua field harus diisi!",
+    });
+    return;
+  }
+  if (ucapan.length > 500) {
+    Swal.fire({
+      icon: "error",
+      title: "Duhh...",
+      text: "Maap, ucapan kamu maksimal 500 karakter!",
     });
     return;
   }
