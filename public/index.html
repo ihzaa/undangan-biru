@@ -2208,10 +2208,7 @@
                     </div>
                     <p></p>
                     <audio autoplay="" loop="" id="playAudio">
-                        <source src="media/1666865799.mp3">
-                    </audio>
-                    <audio autoplay="" id="playAudioS">
-                        <source src="media/suara_ucapan.mp3">
+                        <source src="media/sound.mp3">
                     </audio>
 
                 </div>
@@ -2558,7 +2555,6 @@
             // tema biasa
           $('.awal').hide();
           $("#playAudio").prop("muted",true);
-            $("#playAudioS").prop("muted",true);
         }
     
         $('#wa3').hide();
@@ -3224,9 +3220,6 @@
             if ($("#playAudio").length) {
                 $("#playAudio").get(0).play();
             }
-            if ($("#playAudioS").length) {
-                $("#playAudioS").get(0).play(); //play musik
-            }
     
     
             aktifkanQRCode();
@@ -3459,7 +3452,6 @@
         $("#volume").click(function () {
     		var bool = $("#playAudio").prop("muted");
             $("#playAudio").prop("muted",!bool);
-            $("#playAudioS").prop("muted",!bool);
     
     
     
@@ -3702,7 +3694,6 @@
     
                     // pause music
                     $("#playAudio").prop("muted",true);
-                    $("#playAudioS").prop("muted",true);
                     $(this).css('background-color', '#4970ea00');
             }
             });

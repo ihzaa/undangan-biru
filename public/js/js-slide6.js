@@ -95,7 +95,6 @@ var splide;
         $("#music_1").click(function () {
             var bool = $("#playAudio").prop("muted");
             $("#playAudio").prop("muted", !bool);
-            $("#playAudioS").prop("muted", !bool);
         })
 
 
@@ -453,7 +452,6 @@ var splide;
                 let param = searchParams.get('kpd');
                 $('#konfir_nama').val(param);
                 $("#playAudio").get(0).play();
-                $("#playAudioS").get(0).play(); //play musik
                 runAutoScroll()
                 slide('next')
                 $('#buka-undangan').hide()
