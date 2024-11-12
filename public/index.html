@@ -1163,7 +1163,7 @@
                                         <span class="total-hadir-ucapan">🟢 <span id="total-hadir-ucapan">62063</span> Orang Menyatakan Hadir</span>
                                 </div>
                                 <hr style="margin-top: 10px; margin-bottom: 10px">
-                                
+                                <div id="wrapper-ucapan"></div>
                             </div>
                         </div>
                         <div style="display: flex; position: absolute;bottom: 0px;width: 91%;background-color: #fff; height: 50px; padding-top: 5px; border-top: 1px solid #e8e8e8;">
@@ -1839,22 +1839,22 @@
                                 <p id="notifPopupFill" class="alert alert-success px-0 py-0 m-3" style="font-size: 12px; display: none; background-color: #feffce !important; color: #393939 !important;">Your attendance form has been successfully submitted.
                                     <br> <a class="underline cursor-pointer" onclick="resetKehadiran()">Reset</a></p>
 
-                                <form id="push_ucapan" class="submit_ucapan" action="">
+                                <form id="form_ucapan" class="submit_ucapan">
                                     <div class="form-group col-md-12 font-p" style="background-color: transparan">
                                         <label class="form-label hadir_nama">Nama</label>
-                                        <input maxlength="20" required="" name="nama" id="konfir_nama_2" class="form-control form-fun">
+                                        <input required="" name="form_ucapan_nama" id="konfir_nama_2" class="form-control form-fun">
                                     </div>
                                     <div id="formContainer">
                                     </div>
 
                                     <div id="div-id-ucapan" class="form-group col-md-12 font-p" style="background-color: transparan">
                                         <label class="form-label hadir_ucapan">Ucapan</label>
-                                        <textarea name="ucapan" class="form-control form-fun" id="ucapan_2" style="height: 6rem !important;"></textarea>
+                                        <textarea required name="form_ucapan_ucapan" class="form-control form-fun" id="ucapan_2" style="height: 6rem !important;"></textarea>
                                     </div>
 
                                     <div class="form-group col-md-12 font-p" id="filed_kehadiran" style="background-color: transparan">
                                         <label class="form-label hadir_hadir">Kehadiran</label>
-                                        <select required="" class="form-control form-fun" name="ket_hadir" id="hadir_id">
+                                        <select required="" class="form-control form-fun" name="form_ucapan_kehadiran" id="hadir_id">
                                             <option value="" selected="" disabled> -- Pilih --</option>
                                             <option class="val_nohadir" value="0" style="color: #000;">Tidak Hadir</option>
                                             <option class="val_hadir" value="1" style="color: #000;">Hadir</option>
@@ -4090,6 +4090,7 @@
 
     <script>
         $("#push_ucapan .form-control").attr('style', "color: #ffffff !important; border-bottom: 2px solid #0f0097 !important; background: #FFFFFF1F !important; border: 0px; border-radius: 6px !important; height: 3em !important;");
+        $("#form_ucapan .form-control").attr('style', "color: #ffffff !important; border-bottom: 2px solid #0f0097 !important; background: #FFFFFF1F !important; border: 0px; border-radius: 6px !important; height: 3em !important;");
         $(".box-ucapan-wrapper").remove();
         AOS.init({
             disable: true,
@@ -4208,6 +4209,7 @@
         }
     </script>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="module" src="./js/ucapan.js"></script>
 
 
