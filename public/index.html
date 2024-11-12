@@ -16,7 +16,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="The Wedding of Ayu &amp; Ihza">
 
-    <meta property="og:image" content="images/sampul_wa_19521722420008.jpeg">
+    <meta property="og:image" content="images/bg.png">
 
     <meta property="og:description" content="Kami mengundang anda untuk datang di acara kami">
     <meta name="facebook-domain-verification" content="zr3wk2z3msa7y7eq063nbt71rr7gqo">
@@ -2208,7 +2208,7 @@
                     </div>
                     <p></p>
                     <audio autoplay="" loop="" id="playAudio">
-                        <source src="media/sound.mp3">
+                        <source src="media/piano.mp3">
                     </audio>
 
                 </div>
@@ -2447,7 +2447,6 @@
                 duration: 250,
                 easing: 'easeInOutSine'
             });
-            console.log('open modal');
     
             window.dataLayer.push({
                 'event': 'edit_list_view'
@@ -2481,7 +2480,6 @@
                 var textBtn = $('.btn-login-re').text();
                 $('.btn-login-re').text('Loading...');
     
-                console.log(formData);
                 $('button, input, textarea').prop('disabled', true);
                 // Make AJAX POST request
                 $.ajax({
@@ -2506,7 +2504,6 @@
                         $('.btn-login-re').text('Masuk Dan Edit');
                     },
                     error: function(errjqXHR, textStatus, errorThrownor){
-                        console.log("Error:", errjqXHR);
                         $('#notif-login-re').text('Terjadi kesalahan, periksa koneksi internet dan coba lagi')
                         $('button, input, textarea').prop('disabled', false);
                         $('.btn-login-re').text('Masuk Dan Edit');
@@ -2520,8 +2517,6 @@
     
     
         var d = new Date("Fri Oct 22 2021 10:31:00");
-        // console.log(d.toDateString());
-        // var d = new Date(2021, 10, 5, 12, 0, 0, 0);
     
         let searchParams2 = new URLSearchParams(window.location.search)
         let demoParam = searchParams2.get('demo')
@@ -2637,7 +2632,6 @@
         let jamEnd2 = $('#jam_end2').val();
     
         $('#sampai_selesai_check2').click(function () {
-            console.log(jamEnd2);
             if (jamStart2 == null || jamEnd2 == null) {
                 $('#jamStart2').val('08:00');
                 $('#jam_end2').val('08:00');
@@ -2673,14 +2667,12 @@
     
     
         $('.bantu_bayar2').on('click touchstart tap', function () {
-            console.log('testing');
             $('#modal-bayar').modal('show');
             return 1;
         })
     
     
         $('.rek_copy').on('click touchstart tap', function () {
-            console.log('clicked');
             $(this).text('copied!');
     
             alertMe($(this));
@@ -2696,7 +2688,6 @@
     
     
       $('#btn_titip').on('click touchstart tap', function () {
-        console.log('testing');
         pembayaran()
       })
     
@@ -2833,7 +2824,6 @@
     
             var myParam = location.search.split('kpd=')[1];
             $('#konfir_nama').val(myParam);
-            // console.log(myParam);
             $('#notif_wa').hide();
     
             localStorage.setItem('1952', true);
