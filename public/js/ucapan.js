@@ -75,15 +75,15 @@ const storeUcapan = async (nama, ucapan, kehadiran) => {
     });
     if (kehadiran == 1) {
       Swal.fire({
-        imageUrl: "./images/in-love.gif",
+        imageUrl: "./images/valentines-day.gif",
         title: "Terima kasih ucapannya!",
         text: "Kami tunggu kehadiranmu ya " + nama,
       });
     } else {
       Swal.fire({
-        imageUrl: "./images/sad.gif",
+        imageUrl: "./images/pray.gif",
         title: "Terima kasih ucapannya!",
-        text: `TSemoga kita dapat bertemu di lain kesempatan`,
+        text: `Semoga kita dapat bertemu di lain kesempatan`,
       });
     }
     $("#wrapper-ucapan")
@@ -139,7 +139,6 @@ $("#form_ucapan").submit(function (e) {
   let resp = storeUcapan(nama, ucapan, kehadiran);
   if (resp) {
     $("[name='form_ucapan_nama']").val("");
-    $("[name='form_ucapan_ucapan']").val("");
     $("[name='form_ucapan_kehadiran']").val("");
     $("#total-ucapan-ucapan").text(
       parseInt($("#total-ucapan-ucapan").text()) + 1
