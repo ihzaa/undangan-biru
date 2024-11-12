@@ -75,15 +75,15 @@ const storeUcapan = async (nama, ucapan, kehadiran) => {
     });
     if (kehadiran == 1) {
       Swal.fire({
-        imageUrl: "./images/happy.png",
+        imageUrl: "./images/in-love.gif",
         title: "Terima kasih ucapannya!",
         text: "Kami tunggu kehadiranmu ya " + nama,
       });
     } else {
       Swal.fire({
-        imageUrl: "./images/sad.png",
+        imageUrl: "./images/sad.gif",
         title: "Terima kasih ucapannya!",
-        text: `Yahhh kamu ga hadir ya ${nama}... kami doakan kamu berubah pikiran untuk hadir yah.... hehe`,
+        text: `TSemoga kita dapat bertemu di lain kesempatan`,
       });
     }
     $("#wrapper-ucapan")
@@ -116,10 +116,9 @@ const formatDate = () => {
 
 $("#form_ucapan").submit(function (e) {
   e.preventDefault();
-  const nama = $("[name='form_ucapan_nama']").val();
-  const ucapan = $("[name='form_ucapan_ucapan']").val();
+  const nama = DOMPurify.sanitize($("[name='form_ucapan_nama']").val());
+  const ucapan = DOMPurify.sanitize($("[name='form_ucapan_ucapan']").val());
   const kehadiran = parseInt($("[name='form_ucapan_kehadiran']").val());
-  console.log(nama, ucapan, kehadiran);
 
   if (nama === "" || ucapan.length < 1 || kehadiran === "") {
     Swal.fire({
@@ -150,4 +149,12 @@ $("#form_ucapan").submit(function (e) {
     );
     openEditModal("ucapan-slide");
   }
+});
+
+$(document).ready(function () {
+  $("#form_ucapan_ucapan").emojioneArea({
+    pickerPosition: "bottom",
+    filtersPosition: "bottom",
+    tonesStyle: "bullet",
+  });
 });
