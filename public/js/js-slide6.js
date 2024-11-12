@@ -158,6 +158,10 @@ var splide;
                 splide.go(indexSlide-1);
                 slideTo((indexSlide-1)*-100);
             }
+
+            if(slideClassId == 'li-mn-rsvp'){
+                $('#auto_scroll1').click();
+            }
         }
 
 
