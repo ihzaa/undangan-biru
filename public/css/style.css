@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon_1.eot");
-  src: url("../fonts/icomoon_1.eot#iefix") format("embedded-opentype"), url("../fonts/icomoon_1.ttf") format("truetype"), url("../fonts/icomoon_1.woff") format("woff"), url("../images/icomoon_1.svg#icomoon") format("svg");
+  src: url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@main/public/fonts/icomoon_1.eot");
+  src: url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@main/public/fonts/icomoon_1.eot#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@main/public/fonts/icomoon_1.ttf") format("truetype"), url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@main/public/fonts/icomoon_1.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@main/public/images/icomoon_1.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1833,7 +1833,7 @@ form label {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(../images/loader.gif) center no-repeat #fff;
+  background: url(https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@main/public/images/loader.gif) center no-repeat #fff;
 }
 
 .js .animate-box {
