@@ -136,7 +136,9 @@ $("#form_ucapan").submit(async function (e) {
     });
     return;
   }
+  $("#kucing_imut").css("opacity", "1").show();
   const resp = await storeUcapan(nama, ucapan, kehadiran);
+  $("#kucing_imut").hide();
   if (resp) {
     $("[name='form_ucapan_nama']").val("");
     $("[name='form_ucapan_kehadiran']").val("");
