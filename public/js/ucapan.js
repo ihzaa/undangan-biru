@@ -114,7 +114,7 @@ const formatDate = () => {
   return `${formattedDate} ${formattedTime}`;
 };
 
-$("#form_ucapan").submit(function (e) {
+$("#form_ucapan").submit(async function (e) {
   e.preventDefault();
   const nama = DOMPurify.sanitize($("[name='form_ucapan_nama']").val());
   const ucapan = DOMPurify.sanitize($("[name='form_ucapan_ucapan']").val());
@@ -136,7 +136,7 @@ $("#form_ucapan").submit(function (e) {
     });
     return;
   }
-  let resp = storeUcapan(nama, ucapan, kehadiran);
+  const resp = await storeUcapan(nama, ucapan, kehadiran);
   if (resp) {
     $("[name='form_ucapan_nama']").val("");
     $("[name='form_ucapan_kehadiran']").val("");
