@@ -75,13 +75,13 @@ const storeUcapan = async (nama, ucapan, kehadiran) => {
     });
     if (kehadiran == 1) {
       Swal.fire({
-        imageUrl: "./images/valentines-day.gif",
+        imageUrl: "https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@1dcfa33d9caa41fbbc813918639ddd5e89510245/public/images/valentines-day.gif",
         title: "Terima kasih ucapannya!",
         text: "Kami tunggu kehadiranmu ya " + nama,
       });
     } else {
       Swal.fire({
-        imageUrl: "./images/pray.gif",
+        imageUrl: "https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@1dcfa33d9caa41fbbc813918639ddd5e89510245/public/images/pray.gif",
         title: "Terima kasih ucapannya!",
         text: `Semoga kita dapat bertemu di lain kesempatan`,
       });
