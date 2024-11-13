@@ -75,13 +75,15 @@ const storeUcapan = async (nama, ucapan, kehadiran) => {
     });
     if (kehadiran == 1) {
       Swal.fire({
-        imageUrl: "https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@2fc138728d305a80cd3061a366d0bb4d9ca1b788/public/images/valentines-day.gif",
+        imageUrl:
+          "https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@2fc138728d305a80cd3061a366d0bb4d9ca1b788/public/images/valentines-day.gif",
         title: "Terima kasih ucapannya!",
         text: "Kami tunggu kehadiranmu ya " + nama,
       });
     } else {
       Swal.fire({
-        imageUrl: "https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@2fc138728d305a80cd3061a366d0bb4d9ca1b788/public/images/pray.gif",
+        imageUrl:
+          "https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@2fc138728d305a80cd3061a366d0bb4d9ca1b788/public/images/pray.gif",
         title: "Terima kasih ucapannya!",
         text: `Semoga kita dapat bertemu di lain kesempatan`,
       });
@@ -159,3 +161,29 @@ $(document).ready(function () {
     tonesStyle: "bullet",
   });
 });
+
+// Pilih elemen pertama dengan kelas 'li-mn-rsvp' yang ingin diawasi
+const targetNode = document.querySelector(".li-mn-rsvp");
+
+// Fungsi yang dijalankan ketika kelas 'is-active' ditambahkan
+function onClassAdded() {
+  $("#menu_auto_scroll").css("background-color", "#4970ea");
+    autoPilot = !1; // Mematikan autoPilot
+    $("#notif_scroll1").hide();
+    $("#tutorial-swipe").show();
+}
+
+// Buat instance MutationObserver
+const observer = new MutationObserver((mutationsList) => {
+  for (const mutation of mutationsList) {
+    if (mutation.type === "attributes" && mutation.attributeName === "class") {
+      // Cek apakah kelas 'is-active' ada di classList
+      if (mutation.target.classList.contains("is-active")) {
+        onClassAdded();
+      }
+    }
+  }
+});
+
+// Konfigurasi observer untuk memantau perubahan pada atribut "class"
+observer.observe(targetNode, { attributes: true });
