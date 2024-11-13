@@ -179,11 +179,50 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@8c6b6d5b021e997d336ccf4d70e80df7d58a6c2b/public/css/tailwind.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.2.9/purify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
       window.onload = function () {
         var context = new AudioContext();
       };
+      document.addEventListener("DOMContentLoaded", async () => {
+        async function checkAndSetQuery() {
+          const searchParams = new URLSearchParams(window.location.search);
+
+          if (!searchParams.get("kpd")) {
+            let { value: nama_kpd } = await Swal.fire({
+              input: "text",
+              inputLabel: "Hai hai, tolong spill nama kamu dong!",
+              inputPlaceholder: "Ketik nama kamu disini...",
+              allowOutsideClick: false, // Mencegah modal ditutup dengan mengklik luar
+              allowEscapeKey: false, // Mencegah modal ditutup dengan tombol escape
+              preConfirm: (value) => {
+                if (!value) {
+                  Swal.showValidationMessage("Nama tidak boleh kosong!");
+                }
+                return value;
+              },
+            });
+
+            if (nama_kpd) {
+              nama_kpd = DOMPurify.sanitize(nama_kpd);
+              Swal.fire(`Silahkan lanjutkan ${nama_kpd}...`);
+              $("#kpd").html(nama_kpd);
+              $('[name="form_ucapan_nama"]').val(nama_kpd);
+              // Setel parameter query 'kpd' dengan nama yang diisi pengguna
+              const newUrl = new URL(window.location.href);
+              newUrl.searchParams.set("kpd", nama_kpd);
+
+              // Ubah URL di browser tanpa reload halaman
+              window.history.replaceState(null, "", newUrl);
+            }
+          }
+        }
+
+        // Panggil fungsi async
+        checkAndSetQuery();
+      });
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
@@ -1426,7 +1465,7 @@
                 font-size: 13.5px;
               "
             >
-              <p class="fun-p-209" >
+              <p class="fun-p-209">
                 Besar harapan kami jika Bapak/Ibu/Sahabat/Sdr/i berkenan hadir
                 pada acara ini. Atas perhatiannya Terima kasih
                 <br />
@@ -2370,9 +2409,6 @@
       rel="stylesheet"
     />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.2.9/purify.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script
       type="module"
       src="https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@8c6b6d5b021e997d336ccf4d70e80df7d58a6c2b/public/js/ucapan.js"
