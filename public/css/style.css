@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src: url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@e842a934709516ba18882fd42e09ee8ef725a92f/public/fonts/icomoon_1.eot");
-  src: url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@e842a934709516ba18882fd42e09ee8ef725a92f/public/fonts/icomoon_1.eot#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@e842a934709516ba18882fd42e09ee8ef725a92f/public/fonts/icomoon_1.ttf") format("truetype"), url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@e842a934709516ba18882fd42e09ee8ef725a92f/public/fonts/icomoon_1.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@e842a934709516ba18882fd42e09ee8ef725a92f/public/images/icomoon_1.svg#icomoon") format("svg");
+  src: url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@eb4908fafc195ce775413fd23ed143db1acdd7ee/public/fonts/icomoon_1.eot");
+  src: url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@eb4908fafc195ce775413fd23ed143db1acdd7ee/public/fonts/icomoon_1.eot#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@eb4908fafc195ce775413fd23ed143db1acdd7ee/public/fonts/icomoon_1.ttf") format("truetype"), url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@eb4908fafc195ce775413fd23ed143db1acdd7ee/public/fonts/icomoon_1.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@eb4908fafc195ce775413fd23ed143db1acdd7ee/public/images/icomoon_1.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1833,7 +1833,7 @@ form label {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@e842a934709516ba18882fd42e09ee8ef725a92f/public/images/loader.gif) center no-repeat #fff;
+  background: url(https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@eb4908fafc195ce775413fd23ed143db1acdd7ee/public/images/loader.gif) center no-repeat #fff;
 }
 
 .js .animate-box {

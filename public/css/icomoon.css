@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@e842a934709516ba18882fd42e09ee8ef725a92f/public/fonts/icomoon.eot');
-  src:  url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@e842a934709516ba18882fd42e09ee8ef725a92f/public/fonts/icomoon.eot#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@e842a934709516ba18882fd42e09ee8ef725a92f/public/fonts/icomoon.ttf') format('truetype'),
-    url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@e842a934709516ba18882fd42e09ee8ef725a92f/public/fonts/icomoon.woff') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@e842a934709516ba18882fd42e09ee8ef725a92f/public/images/icomoon.svg#icomoon') format('svg');
+  src:  url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@eb4908fafc195ce775413fd23ed143db1acdd7ee/public/fonts/icomoon.eot');
+  src:  url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@eb4908fafc195ce775413fd23ed143db1acdd7ee/public/fonts/icomoon.eot#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@eb4908fafc195ce775413fd23ed143db1acdd7ee/public/fonts/icomoon.ttf') format('truetype'),
+    url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@eb4908fafc195ce775413fd23ed143db1acdd7ee/public/fonts/icomoon.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@eb4908fafc195ce775413fd23ed143db1acdd7ee/public/images/icomoon.svg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
