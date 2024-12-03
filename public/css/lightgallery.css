@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'lg';
-  src: url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@791d6095a9c128979d157dfca6b5bf6ad092dfff/public/fonts/lg.ttf?io9a6k") format("truetype"), url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@791d6095a9c128979d157dfca6b5bf6ad092dfff/public/fonts/lg.woff?io9a6k") format("woff"), url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@791d6095a9c128979d157dfca6b5bf6ad092dfff/public/fonts/lg.svg?io9a6k#lg") format("svg");
+  src: url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@c12ca79bfd64b61f3db40694f110a4f4cafb40c3/public/fonts/lg.ttf?io9a6k") format("truetype"), url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@c12ca79bfd64b61f3db40694f110a4f4cafb40c3/public/fonts/lg.woff?io9a6k") format("woff"), url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@c12ca79bfd64b61f3db40694f110a4f4cafb40c3/public/fonts/lg.svg?io9a6k#lg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -467,7 +467,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-item:not(.lg-start-end-progress) {
-  background: url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@791d6095a9c128979d157dfca6b5bf6ad092dfff/public/images/loading.gif") no-repeat scroll center center transparent;
+  background: url("https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@c12ca79bfd64b61f3db40694f110a4f4cafb40c3/public/images/loading.gif") no-repeat scroll center center transparent;
 }
 
 .lg-outer.lg-css3 .lg-prev-slide,

@@ -107,7 +107,7 @@ body {}
     gap: 10px;
     /* transition: all 0.7s; */
     color: rgb(5, 5, 5);
-    background: url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@791d6095a9c128979d157dfca6b5bf6ad092dfff/public/images/SFL-2.webp');
+    background: url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@c12ca79bfd64b61f3db40694f110a4f4cafb40c3/public/images/SFL-2.webp');
     background-position: center right;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -124,7 +124,7 @@ body {}
 
 .two {
     background: linear-gradient(0deg, rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)),
-        url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@791d6095a9c128979d157dfca6b5bf6ad092dfff/public/images/ber2_2.jpg');
+        url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@c12ca79bfd64b61f3db40694f110a4f4cafb40c3/public/images/ber2_2.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -136,7 +136,7 @@ body {}
 }
 
 .three {
-    background: url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@791d6095a9c128979d157dfca6b5bf6ad092dfff/public/images/SFL-8.webp');
+    background: url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@c12ca79bfd64b61f3db40694f110a4f4cafb40c3/public/images/SFL-8.webp');
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -147,7 +147,7 @@ body {}
 }
 
 .four {
-    background: url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@791d6095a9c128979d157dfca6b5bf6ad092dfff/public/images/SFL-3.webp');
+    background: url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@c12ca79bfd64b61f3db40694f110a4f4cafb40c3/public/images/SFL-3.webp');
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -158,7 +158,7 @@ body {}
 }
 
 .five {
-    background: url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@791d6095a9c128979d157dfca6b5bf6ad092dfff/public/images/SFL-6.webp');
+    background: url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@c12ca79bfd64b61f3db40694f110a4f4cafb40c3/public/images/SFL-6.webp');
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -169,7 +169,7 @@ body {}
 }
 
 .six {
-    background: url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@791d6095a9c128979d157dfca6b5bf6ad092dfff/public/images/SFL-5.webp');
+    background: url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@c12ca79bfd64b61f3db40694f110a4f4cafb40c3/public/images/SFL-5.webp');
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -361,12 +361,12 @@ img {
 
 @font-face {
     font-family: "Java";
-    src: url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@791d6095a9c128979d157dfca6b5bf6ad092dfff/public/Javassoul.ttf') format("truetype");
+    src: url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@c12ca79bfd64b61f3db40694f110a4f4cafb40c3/public/Javassoul.ttf') format("truetype");
 }
 
 @font-face {
     font-family: "Paisley";
-    src: url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@791d6095a9c128979d157dfca6b5bf6ad092dfff/public/Paisley.otf') format("truetype");
+    src: url('https://cdn.jsdelivr.net/gh/ihzaa/undangan-biru@c12ca79bfd64b61f3db40694f110a4f4cafb40c3/public/Paisley.otf') format("truetype");
 }
 
 .box-shadow-new {
